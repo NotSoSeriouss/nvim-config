@@ -9,4 +9,7 @@ return {
 
     vim.cmd('colorscheme github_dark_default')
   end,
+  dependencies = {
+  	"nvim-tree/nvim-web-devicons",
+  }
 }
