@@ -4,8 +4,11 @@ vim.keymap.set("n", "-", ":-")
 vim.keymap.set("n", "+", ":+")
 vim.keymap.set("n", "ww", "<C-w>w")
 vim.keymap.set("n", "wp", "<C-w>p")
-vim.keymap.set("n", "w<Down>", "<C-w>s")
-vim.keymap.set("n", "w<Right>", "<C-w>v")
+vim.keymap.set("n", "w<Down>", "<C-w>s<C-w>w")
+vim.keymap.set("n", "w<Right>", "<C-w>v<C-w>w")
+vim.keymap.set("n", "wt", "<C-w>s<C-w>w:term<Enter>atmux<Enter>")
+vim.keymap.set("n", "wq", "<cmd>q<cr>")
+
 
 -- Lazy
 vim.keymap.set("n", "<leader>lh", "<cmd>Lazy home<cr>")
