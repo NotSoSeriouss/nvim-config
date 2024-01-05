@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 require("pollo.settings")
-require("pollo.remaps")
 require("pollo.lazy")
+require("pollo.remaps")
