@@ -2,8 +2,8 @@ vim = vim or {}
 
 -- General
 vim.keymap.set("n", "<leader>f", "gg^VG=")
-vim.keymap.set("n", "-", ":-")
-vim.keymap.set("n", "+", ":+")
+vim.keymap.set("n", "+", "<C-d>zz")
+vim.keymap.set("n", "-", "<C-u>zz")
 
 -- Windows
 vim.keymap.set("n", "ww", "<C-w>w")
@@ -22,7 +22,8 @@ vim.keymap.set("n", "<leader>lc", "<cmd>Lazy clean<cr>")
 
 -- Telescope
 vim.keymap.set("n", "<leader>pf", "<cmd>Telescope find_files<cr>")
-vim.keymap.set("n", "<leader>pg", "<cmd>Telescope grep_string<cr>")
+vim.keymap.set("n", "<leader>ps", function() require("telescope.builtin").grep_string({ search = vim.fn.input("Grep > ") }) end)
+vim.keymap.set("n", "<leader>*", "<cmd>Telescope grep_string<cr>")
 
 -- Codeium
 vim.keymap.set("i", "<S-Right>", function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
