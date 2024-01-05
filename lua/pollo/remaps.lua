@@ -1,6 +1,4 @@
 -- General
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Rex)
 vim.keymap.set("n", "<leader>f", "gg^VG=")
 vim.keymap.set("n", "-", ":-")
 vim.keymap.set("n", "+", ":+")
@@ -18,3 +16,5 @@ vim.keymap.set("n", "<leader>pg", "<cmd>Telescope grep_string<cr>")
 -- Codeium
 vim.keymap.set("i", "<S-Right>", function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
 
+-- NvimTree
+vim.keymap.set("n", "<leader><Tab>", require"nvim-tree.api".tree.toggle)
