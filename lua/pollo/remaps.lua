@@ -2,6 +2,10 @@
 vim.keymap.set("n", "<leader>f", "gg^VG=")
 vim.keymap.set("n", "-", ":-")
 vim.keymap.set("n", "+", ":+")
+vim.keymap.set("n", "ww", "<C-w>w")
+vim.keymap.set("n", "wp", "<C-w>p")
+vim.keymap.set("n", "w<Down>", "<C-w>s")
+vim.keymap.set("n", "w<Right>", "<C-w>v")
 
 -- Lazy
 vim.keymap.set("n", "<leader>lh", "<cmd>Lazy home<cr>")
