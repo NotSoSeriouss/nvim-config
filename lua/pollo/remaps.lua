@@ -11,3 +11,4 @@ vim.keymap.set("n", "<leader>lc", "<cmd>Lazy clean<cr>")
 -- Telescope
 vim.keymap.set("n", "<leader>pf", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>pg", "<cmd>Telescope grep_string<cr>")
+
