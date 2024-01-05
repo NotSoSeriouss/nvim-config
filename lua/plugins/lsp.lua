@@ -25,7 +25,6 @@ return {
 										lsp_zero.default_setup,
 								},
 						})
-						require('lspconfig').lua_ls.setup({})
 				end
 		},
 }

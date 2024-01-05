@@ -2,6 +2,8 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Rex)
 vim.keymap.set("n", "<leader>f", "gg^VG=")
+vim.keymap.set("n", "-", ":-")
+vim.keymap.set("n", "+", ":+")
 
 -- Lazy
 vim.keymap.set("n", "<leader>lh", "<cmd>Lazy home<cr>")
