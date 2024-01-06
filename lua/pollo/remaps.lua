@@ -7,7 +7,7 @@ vim.keymap.set("n", "-", "<C-u>zz")
 
 -- Windows
 vim.keymap.set("n", "ww", "<C-w>w")
-vim.keymap.set("n", "wp", "<C-w>p")
+vim.keymap.set("n", "wp", "<C-w>W")
 vim.keymap.set("n", "w<Down>", "<C-w>s<C-w>w")
 vim.keymap.set("n", "w<Right>", "<C-w>v<C-w>w")
 vim.keymap.set("n", "wt", "<C-w>s<C-w>w:term<Enter>")
