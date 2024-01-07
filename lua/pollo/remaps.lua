@@ -30,3 +30,13 @@ vim.keymap.set("i", "<S-Right>", function () return vim.fn['codeium#Accept']() e
 
 -- NvimTree
 vim.keymap.set("n", "<leader><Tab>", require"nvim-tree.api".tree.toggle)
+
+-- Harpoon
+vim.keymap.set("n", "<leader>ha", require"harpoon.mark".add_file)
+vim.keymap.set("n", "<leader>hs", require"harpoon.ui".toggle_quick_menu)
+vim.keymap.set("n", "<leader>hg", require"harpoon.ui".nav_prev)
+vim.keymap.set("n", "<leader>hj", require"harpoon.ui".nav_next)
+vim.keymap.set("n", "<leader>1", function() require"harpoon.ui".nav_file(1) end)
+vim.keymap.set("n", "<leader>2", function() require"harpoon.ui".nav_file(2) end)
+vim.keymap.set("n", "<leader>3", function() require"harpoon.ui".nav_file(3) end)
+vim.keymap.set("n", "<leader>4", function() require"harpoon.ui".nav_file(4) end)
