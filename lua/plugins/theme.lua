@@ -62,4 +62,4 @@ local vscode = {
 	}
 }
 
-return vscode
+return githubTheme

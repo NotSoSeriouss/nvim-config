@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader>ps", function() require("telescope.builtin").grep_s
 vim.keymap.set("n", "<leader>*", "<cmd>Telescope grep_string<cr>")
 
 -- Codeium
-vim.keymap.set("i", "<S-Right>", function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+-- vim.keymap.set("i", "<S-Right>", function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
 
 -- NvimTree
 vim.keymap.set("n", "<leader><Tab>", require"nvim-tree.api".tree.toggle)
