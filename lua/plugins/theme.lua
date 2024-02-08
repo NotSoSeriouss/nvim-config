@@ -62,4 +62,17 @@ local vscode = {
 	}
 }
 
-return githubTheme
+local coffeetable = {
+	"NotSoSeriouss/coffeetable.vim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		vim.cmd("colorscheme coffeetable-dark")
+	end,
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
+	}
+}
+
+vim.cmd("colorscheme slate")
+return {}
