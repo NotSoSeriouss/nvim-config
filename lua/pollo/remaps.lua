@@ -25,9 +25,6 @@ vim.keymap.set("n", "<leader>pf", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>ps", function() require("telescope.builtin").grep_string({ search = vim.fn.input("Grep > ") }) end)
 vim.keymap.set("n", "<leader>*", "<cmd>Telescope grep_string<cr>")
 
--- Codeium
--- vim.keymap.set("i", "<S-Right>", function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-
 -- NvimTree
 vim.keymap.set("n", "<leader><Tab>", require"nvim-tree.api".tree.toggle)
 
@@ -40,3 +37,10 @@ vim.keymap.set("n", "<leader>1", function() require"harpoon.ui".nav_file(1) end)
 vim.keymap.set("n", "<leader>2", function() require"harpoon.ui".nav_file(2) end)
 vim.keymap.set("n", "<leader>3", function() require"harpoon.ui".nav_file(3) end)
 vim.keymap.set("n", "<leader>4", function() require"harpoon.ui".nav_file(4) end)
+
+-- Dap
+vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end)
+vim.keymap.set("n", "<leader>di", function() require("dap").step_into() end)
+vim.keymap.set("n", "<leader>dn", function() require("dap").step_over() end)
+vim.keymap.set("n", "<leader>do", function() require("dap").step_out() end)
+vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end)

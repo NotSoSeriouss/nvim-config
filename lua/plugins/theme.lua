@@ -75,4 +75,4 @@ local coffeetable = {
 }
 
 vim.cmd("colorscheme slate")
-return {}
+return {"nvim-tree/nvim-web-devicons"}
