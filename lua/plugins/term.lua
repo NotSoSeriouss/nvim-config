@@ -14,9 +14,12 @@ return {
 				autochdir = true,
 				auto_scroll = true,
 				start_in_insert = false,
+				close_on_exit = true,
 				float_opts = {
-					border = "curved"
-				}
+					border = "curved",
+					title_pos = "center",
+					winblend = 10,
+				},
 			}
 		end
 	}
