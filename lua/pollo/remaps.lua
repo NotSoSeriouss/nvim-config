@@ -10,8 +10,11 @@ vim.keymap.set("n", "<leader>ww", "<C-w>w")
 vim.keymap.set("n", "<leader>wp", "<C-w>W")
 vim.keymap.set("n", "<leader>wj", "<C-w>s<C-w>w")
 vim.keymap.set("n", "<leader>wl", "<C-w>v<C-w>w")
-vim.keymap.set("n", "<leader>wt", "<C-w>s<C-w>w:term<Enter>")
 vim.keymap.set("n", "<leader>wq", "<cmd>q<cr>")
+
+-- Terminal
+vim.keymap.set("n", "<leader>wt", "<cmd>ToggleTerm direction=horizontal<cr>a")
+vim.keymap.set("n", "<leader>wf", "<Cmd>ToggleTerm direction=float<CR>a")
 vim.keymap.set("t", "<esc>", "<C-\\><C-n>", { silent = true })
 
 -- Lazy
