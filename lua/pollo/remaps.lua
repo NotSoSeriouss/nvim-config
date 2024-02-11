@@ -1,7 +1,8 @@
 vim = vim or {}
 
 -- General
-vim.keymap.set("n", "<leader>f", "gg=G")
+vim.keymap.set("n", "<leader>f", "magg0=G`a")
+vim.keymap.set("n", "<leader>7", "<cmd>noh<cr>")
 vim.keymap.set("n", "+", "<C-d>zz")
 vim.keymap.set("n", "-", "<C-u>zz")
 
