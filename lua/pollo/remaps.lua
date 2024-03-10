@@ -1,10 +1,12 @@
+---@diagnostic disable-next-line
 vim = vim or {}
 
 -- General
-vim.keymap.set("n", "<leader>f", "magg0=G`a")
+vim.keymap.set("n", "<leader>f", "magg0=G`azz")
 vim.keymap.set("n", "<leader>7", "<cmd>noh<cr>")
 vim.keymap.set("n", "+", "<C-d>zz")
 vim.keymap.set("n", "-", "<C-u>zz")
+vim.keymap.set("n", "<leader>s", "<cmd>wa<cr><cmd>qa<cr>")
 
 -- Windows
 vim.keymap.set("n", "<leader>ww", "<C-w>w")
@@ -23,6 +25,9 @@ vim.keymap.set("n", "<leader>lh", "<cmd>Lazy home<cr>")
 vim.keymap.set("n", "<leader>li", "<cmd>Lazy install<cr>")
 vim.keymap.set("n", "<leader>lu", "<cmd>Lazy update<cr>")
 vim.keymap.set("n", "<leader>lc", "<cmd>Lazy clean<cr>")
+
+-- Trouble
+vim.keymap.set("n", "<leader>pt", "<cmd>TroubleToggle<cr>")
 
 -- Telescope
 vim.keymap.set("n", "<leader>pf", "<cmd>Telescope find_files<cr>")
