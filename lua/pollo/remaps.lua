@@ -49,7 +49,12 @@ vim.keymap.set("n", "<leader>4", function() require"harpoon.ui".nav_file(4) end)
 
 -- Dap
 vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end)
-vim.keymap.set("n", "<leader>di", function() require("dap").step_into() end)
-vim.keymap.set("n", "<leader>dn", function() require("dap").step_over() end)
-vim.keymap.set("n", "<leader>do", function() require("dap").step_out() end)
+vim.keymap.set("n", "<leader>d<Down>", function() require("dap").step_into() end)
+vim.keymap.set("n", "<leader>d<Left>", function() require("dap").step_over() end)
+vim.keymap.set("n", "<leader>d<Up>", function() require("dap").step_out() end)
 vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end)
+vim.keymap.set("n", "<leader>ds", function() require("dapui").toggle() end)
+
+-- Copilot
+vim.keymap.set("n", "<leader>ce", "<cmd>Copilot enable<cr>")
+vim.keymap.set("n", "<leader>cd", "<cmd>Copilot disable<cr>")
