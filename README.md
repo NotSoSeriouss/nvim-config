@@ -45,9 +45,6 @@ My Neovim configuration uses `lazy` as the plugin manager. This means that plugi
 
 1. Make sure you have Neovim installed on your system.
 2. Clone this repository to your Neovim configuration directory (usually `~/.config/nvim/`).
-3. Install the required plugins using your preferred package manager (e.g., `:PackerInstall` for `packer.nvim`).
-4. Configure any additional settings or key mappings as desired.
-5. Enjoy your enhanced Neovim experience!
 
 ## Feedback and Contributions
 
