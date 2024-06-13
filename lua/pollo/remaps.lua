@@ -7,6 +7,7 @@ vim.keymap.set("n", "<leader>7", "<cmd>noh<cr>")
 vim.keymap.set("n", "+", "<C-d>zz")
 vim.keymap.set("n", "-", "<C-u>zz")
 vim.keymap.set("n", "<leader>s", "<cmd>wa<cr><cmd>qa<cr>")
+vim.keymap.set("n", "gp", "<cmd>e#<cr>")
 
 -- Windows
 vim.keymap.set("n", "<leader>ww", "<C-w>w")
