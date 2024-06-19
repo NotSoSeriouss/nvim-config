@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>lu", "<cmd>Lazy update<cr>")
 vim.keymap.set("n", "<leader>lc", "<cmd>Lazy clean<cr>")
 
 -- Trouble
-vim.keymap.set("n", "<leader>pt", "<cmd>TroubleToggle<cr>")
+vim.keymap.set("n", "<leader>pt", "<cmd>Trouble diagnostics<cr>")
 
 -- Telescope
 vim.keymap.set("n", "<leader>pf", "<cmd>Telescope find_files<cr>")
