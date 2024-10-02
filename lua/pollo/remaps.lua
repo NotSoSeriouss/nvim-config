@@ -56,6 +56,6 @@ vim.keymap.set("n", "<leader>d<Up>", function() require("dap").step_out() end)
 vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end)
 vim.keymap.set("n", "<leader>ds", function() require("dapui").toggle() end)
 
--- Copilot
-vim.keymap.set("n", "<leader>ce", "<cmd>Copilot enable<cr>")
+-- Autocomplete
+vim.keymap.set("n", "<leader>ce", "<cmd>Codeium enable<cr>")
 vim.keymap.set("n", "<leader>cd", "<cmd>Copilot disable<cr>")

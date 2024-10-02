@@ -1,11 +1,20 @@
 return {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  dependencies = {
-	"nvim-tree/nvim-web-devicons"
-  },
-  config = function()
-	  vim.cmd("colorscheme tokyonight-moon")
-  end
+	"Mofiqul/vscode.nvim",
+	config = function()
+		require("vscode").setup{
+			-- Alternatively set style in setup
+			-- style = 'light'
+
+			-- Enable transparent background
+			transparent = false,
+
+			-- Enable italic comment
+			italic_comments = true,
+
+			-- Underline `@markup.link.*` variants
+			underline_links = true,
+		}
+
+		vim.cmd.colorscheme "vscode"
+	end
 }
