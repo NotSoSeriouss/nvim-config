@@ -1,17 +1,16 @@
 return {
 	"Mofiqul/vscode.nvim",
+	dependencies = { 
+		"projekt0n/github-nvim-theme",
+		"catppuccin/nvim",
+		"rose-pine/neovim",
+		"savq/melange-nvim",
+		"doums/darcula",
+	},
 	config = function()
 		require("vscode").setup{
-			-- Alternatively set style in setup
-			-- style = 'light'
-
-			-- Enable transparent background
 			transparent = false,
-
-			-- Enable italic comment
 			italic_comments = true,
-
-			-- Underline `@markup.link.*` variants
 			underline_links = true,
 		}
 
