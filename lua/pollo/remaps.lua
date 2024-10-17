@@ -53,18 +53,6 @@ vim.keymap.set("n", "<leader>3", function() require"harpoon.ui".nav_file(3) end)
 vim.keymap.set("n", "<leader>4", function() require"harpoon.ui".nav_file(4) end)
 
 -- Dap
-<<<<<<< HEAD
-vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end)
-vim.keymap.set("n", "<leader>d<Down>", function() require("dap").step_into() end)
-vim.keymap.set("n", "<leader>d<Left>", function() require("dap").step_over() end)
-vim.keymap.set("n", "<leader>d<Up>", function() require("dap").step_out() end)
-vim.keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end)
-vim.keymap.set("n", "<leader>ds", function() require("dapui").toggle() end)
-
--- Copilot
-vim.keymap.set("n", "<leader>ce", "<cmd>Copilot enable<cr>")
-vim.keymap.set("n", "<leader>cd", "<cmd>Copilot disable<cr>")
-=======
 vim.keymap.set("n", "<leader>dc", function() require("dap").continue() end) -- Continue
 vim.keymap.set("n", "<leader>d<Down>", function() require("dap").step_into() end) -- Step into
 vim.keymap.set("n", "<leader>d<Left>", function() require("dap").step_over() end) -- Step over
@@ -85,4 +73,3 @@ vim.keymap.set("n", "<leader>gct", "<cmd>GitConflictChooseOurs<cr>") -- Solve co
 -- GitSigns
 vim.keymap.set("n", "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>") -- Toggle blame
 vim.keymap.set("n", "<leader>gd", "<cmd>Gitsigns diffthis<cr>") -- View buffer's diff
->>>>>>> 4.0
